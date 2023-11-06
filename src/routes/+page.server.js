@@ -77,7 +77,7 @@ export const actions = {
                 const [projectName, clientId] = projectsDict[time['project_id']] || ["Unknown Project", null];
                 const clientName = clientsDict[clientId] || "Unknown Client";
 
-                const firstTag = time['tags'] && time['tags'].length > 0 ? time['tags'][0] : 'Programming';
+                const firstTag = time['tags'] && time['tags'].length > 0 ? time['tags'][0] : 'Programmering';
 
                 return `${formattedDate},Normal,${roundToHalfHour(time['duration'])},${clientName},${projectName},${firstTag},${task},${descriptionWithoutTask}`;
             });
