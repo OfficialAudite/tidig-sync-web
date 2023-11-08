@@ -3,7 +3,7 @@ const mainHeader = "Datum, Artikel, Tid (timmar), Kund, Projekt, Aktivitet, Äre
 
 function roundToHalfHour(seconds) {
     let hours = seconds / 3600;
-    let roundedHours = Math.round(hours * 2) / 2;
+    let roundedHours = Math.ceil(hours * 2) / 2;
     return roundedHours % 1 === 0 ? roundedHours : roundedHours.toFixed(1);
 }
 
